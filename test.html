@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>Lecture-Block</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            background: linear-gradient(90deg, #7c3aed, #2563eb);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #head {
+            color: #312C2C;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .description {
+            color: #545963;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 100;
+        }
+
+        .cab,
+        .cab-left {
+            font-family: Cabin, sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+        }
+
+        .para,
+        .para-left {
+            font-family: Cabin, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+        }
+
+        .scroll {
+            scrollbar-color: #055bca rgba(88, 138, 240, 0.6);
+            scrollbar-width: thin;
+        }
+
+        @media (max-width: 640px) {
+            .scroll::-webkit-scrollbar {
+                height: 6px;
+            }
+
+            .scroll::-webkit-scrollbar-thumb {
+                background: #055bca;
+                border-radius: 3px;
+            }
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="flex bg-white border-2 font-sans h-14 w-full items-center text-gray-200">
+        <ul class="flex w-full justify-between items-center px-2 sm:px-4">
+            <div class="hidden md:flex items-center w-1/3">
+                <a href="product.html">
+                    <div
+                        class="w-[100px] h-[40px] bg-blue-500/70 justify-center items-center font-bold rounded-2xl flex px-2">
+                        <img src="icons/leftarrow.png" style="width: 30px; height: 30px;" alt="Back">
+                    </div>
+                </a>
+            </div>
+
+            <div class="flex justify-center items-center sm:hidden">
+                <a href="index.html">
+                    <img src="/icons/dash.png" style="width: 140px; height:20px" alt="Logo">
+                </a>
+            </div>
+
+            <div
+                class="flex justify-center items-center w-full sm:w-auto bg-white border-2 border-blue-500 rounded-b-2xl px-2 py-1">
+                <a href="#home" class="text-blue-500 hover:text-blue-800 px-2 sm:px-3 text-xs sm:text-base">Home</a>
+                <a href="#About" class="text-blue-500 hover:text-blue-800 px-2 sm:px-3 text-xs sm:text-base">About</a>
+                <a href="#Demo" class="text-blue-500 hover:text-blue-800 px-2 sm:px-3 text-xs sm:text-base">Demo</a>
+                <a href="#overview" class="text-blue-500 hover:text-blue-800 px-2 sm:px-3 text-xs sm:text-base">Work</a>
+                <a href="#feedback"
+                    class="text-blue-500 hover:text-blue-800 px-2 sm:px-3 text-xs sm:text-base">Feedback</a>
+            </div>
+
+            <div class="hidden md:flex w-1/3 justify-end">
+                <div
+                    class="w-[200px] h-[40px] flex bg-blue-500 justify-center items-center font-bold rounded-2xl text-white">
+                    <h1>Pre Book</h1>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="w-full bg-gray-100 min-h-screen flex flex-col py-8 sm:py-0">
+        <div
+            class="w-full flex flex-col-reverse lg:flex-row justify-center items-center min-h-screen px-4 sm:px-8 lg:px-12">
+            <div class="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start pb-8 lg:pb-12">
+                <div class="max-w-2xl">
+                    <h1 id="head"
+                        class="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['Poppins'] text-center lg:text-left mb-4 sm:mb-6">
+                        Everything Your School Needs, in One App
+                    </h1>
+                    <p
+                        class="description text-sm sm:text-base md:text-lg lg:text-xl text-center lg:text-left mb-6 sm:mb-8">
+                        An easy-to-use app that helps schools share classes, homework, and announcements with
+                        students—without any technical setup
+                    </p>
+                    <div class="flex justify-center lg:justify-start">
+                        <a href="#feedback">
+                            <div
+                                class="w-[200px] sm:w-[250px] md:w-[300px] h-[60px] sm:h-[70px] md:h-[75px] flex justify-center items-center bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors">
+                                <h1 class="font-bold text-lg sm:text-xl md:text-2xl">Give Feedback</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0 relative">
+                <div class="relative w-full max-w-md lg:max-w-lg">
+                    <img src="/figma/Group 48@2x.png" alt="" class="w-full h-auto">
+                    <img src="/figma/Image.png" alt=""
+                        class="absolute top-8 left-1/2 transform -translate-x-1/2 w-3/5 h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section id="About" class="w-full py-12 sm:py-16 lg:py-20 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-medium mb-4" style="color: #312C2C;">How it Works</h1>
+                <p class="text-center max-w-2xl mx-auto text-sm sm:text-base" style="color:#737373">
+                    Embrace life's vastness, venture forth, and discover the wonders waiting beyond. The world beckons;
+                    seize its grand offerings now!
+                </p>
+            </div>
+
+            <!-- Mobile Phone Display -->
+            <div class="flex justify-center items-center mb-12 sm:mb-16 lg:hidden">
+                <div class="relative w-64 h-96">
+                    <img src="figma/iPhone-13-Pro-Front.png" alt=""
+                        class="absolute inset-0 z-20 w-full h-full object-contain">
+                    <div
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-[#367CDF] rounded-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+                <!-- Left Column -->
+                <div class="space-y-8 lg:space-y-12">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col sm:flex-row items-center lg:items-end lg:flex-col gap-4">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 bg-[#367CDF] rounded-full flex items-center justify-center">
+                            <h1 class="text-white text-2xl sm:text-3xl font-normal">1</h1>
+                        </div>
+                        <div class="flex-1 text-center sm:text-left lg:text-right">
+                            <h1 class="cab text-lg sm:text-xl mb-2">Download the App</h1>
+                            <p class="para text-sm">Students download the app from the Play Store using a single common
+                                app name.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col sm:flex-row items-center lg:items-end lg:flex-col gap-4">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 bg-[#367CDF] rounded-full flex items-center justify-center">
+                            <h1 class="text-white text-2xl sm:text-3xl font-normal">3</h1>
+                        </div>
+                        <div class="flex-1 text-center sm:text-left lg:text-right">
+                            <h1 class="cab text-lg sm:text-xl mb-2">App Becomes School App</h1>
+                            <p class="para text-sm">After entering the code, the app loads the school's name & logo,
+                                changes the app colors/theme, and shows only that school's data.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Phone (Desktop Only) -->
+                <div class="hidden lg:flex justify-center items-center">
+                    <div class="relative w-80 h-[500px]">
+                        <img src="figma/iPhone-13-Pro-Front.png" alt=""
+                            class="absolute inset-0 z-20 w-full h-full object-contain">
+                        <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-[#367CDF] rounded-full">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="space-y-8 lg:space-y-12">
+                    <!-- Step 2 -->
+                    <div class="flex flex-col sm:flex-row items-center lg:items-start lg:flex-col gap-4">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 bg-[#367CDF] rounded-full flex items-center justify-center">
+                            <h1 class="text-white text-2xl sm:text-3xl font-normal">2</h1>
+                        </div>
+                        <div class="flex-1 text-center sm:text-left">
+                            <h1 class="cab-left text-lg sm:text-xl mb-2">Enter School Code</h1>
+                            <p class="para-left text-sm">On first launch, the app asks for a School / Class Code
+                                provided by the school.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex flex-col sm:flex-row items-center lg:items-start lg:flex-col gap-4">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 bg-[#367CDF] rounded-full flex items-center justify-center">
+                            <h1 class="text-white text-2xl sm:text-3xl font-normal">4</h1>
+                        </div>
+                        <div class="flex-1 text-center sm:text-left">
+                            <h1 class="cab-left text-lg sm:text-xl mb-2">Students Use Daily</h1>
+                            <p class="para-left text-sm">Students see: Classes & timetable, Homework & announcements,
+                                Results, attendance, etc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Overview -->
+    <section id="overview" class="w-full py-12 sm:py-16 lg:py-20 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8 sm:mb-12">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6"
+                    style="color: #000000B2; font-family: Poppins;">
+                    Simple for Students
+                </h1>
+                <p class="text-base sm:text-lg max-w-lg" style="font-family: 'Inter';">
+                    Schools control what features are active, so students see only what matters to them.
+                </p>
+            </div>
+
+            <!-- Desktop Grid -->
+            <div class="hidden lg:grid grid-cols-2 xl:grid-cols-4 gap-6">
+                <div class="bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                    <img src="figma/page3/phone1.png" alt="" class="w-full">
+                    <div class="bg-white p-4 text-center">
+                        <h1 class="font-bold text-xl" style="font-family: Poppins;">Student Login</h1>
+                    </div>
+                </div>
+                <div class="bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                    <img src="figma/page3/phone2.png" alt="" class="w-full">
+                    <div class="bg-white p-4 text-center">
+                        <h1 class="font-bold text-xl" style="font-family: Poppins;">Student Profile</h1>
+                    </div>
+                </div>
+                <div class="bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                    <img src="figma/page3/attendance.png" alt="" class="w-full">
+                    <div class="bg-white p-4 text-center">
+                        <h1 class="font-bold text-xl" style="font-family: Poppins;">Attendance</h1>
+                    </div>
+                </div>
+                <div class="bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                    <img src="figma/page3/fees.png" alt="" class="w-full">
+                    <div class="bg-white p-4 text-center">
+                        <h1 class="font-bold text-xl" style="font-family: Poppins;">Fees Payment</h1>
+                    </div>
+                </div>
+                <div class="bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                    <img src="figma/page3/result.png" alt="" class="w-full">
+                    <div class="bg-white p-4 text-center">
+                        <h1 class="font-bold text-xl" style="font-family: Poppins;">Result</h1>
+                    </div>
+                </div>
+                <div class="bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                    <img src="figma/page3/Quizz.png" alt="" class="w-full">
+                    <div class="bg-white p-4 text-center">
+                        <h1 class="font-bold text-xl" style="font-family: Poppins;">Fun Quizz</h1>
+                    </div>
+                </div>
+                <div class="bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                    <img src="figma/page3/table.png" alt="" class="w-full">
+                    <div class="bg-white p-4 text-center">
+                        <h1 class="font-bold text-xl" style="font-family: Poppins;">Time Table</h1>
+                    </div>
+                </div>
+                <div class="bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                    <img src="figma/page3/sheet.png" alt="" class="w-full">
+                    <div class="bg-white p-4 text-center">
+                        <h1 class="font-bold text-xl" style="font-family: Poppins;">Data Sheet</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile/Tablet Horizontal Scroll -->
+            <div class="lg:hidden bg-blue-500 p-4 rounded-2xl">
+                <div class="flex gap-4 overflow-x-auto scroll pb-4">
+                    <div
+                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                        <img src="figma/page3/phone1.png" alt="" class="w-full">
+                        <div class="bg-white p-3 text-center">
+                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Student Login</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                        <img src="figma/page3/phone2.png" alt="" class="w-full">
+                        <div class="bg-white p-3 text-center">
+                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Student Profile</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                        <img src="figma/page3/result.png" alt="" class="w-full">
+                        <div class="bg-white p-3 text-center">
+                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Result</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                        <img src="figma/page3/Quizz.png" alt="" class="w-full">
+                        <div class="bg-white p-3 text-center">
+                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Fun Quizz</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                        <img src="figma/page3/attendance.png" alt="" class="w-full">
+                        <div class="bg-white p-3 text-center">
+                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Attendance</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                        <img src="figma/page3/fees.png" alt="" class="w-full">
+                        <div class="bg-white p-3 text-center">
+                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Fees Payment</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                        <img src="figma/page3/table.png" alt="" class="w-full">
+                        <div class="bg-white p-3 text-center">
+                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Time Table</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
+                        <img src="figma/page3/sheet.png" alt="" class="w-full">
+                        <div class="bg-white p-3 text-center">
+                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Data Sheet</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Video Section -->
+    <section id="Demo" class="w-full bg-[#F1F5F9] py-12 sm:py-16 lg:py-20 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-8 sm:mb-12">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4"
+                    style="color: #000000B2; font-family: Poppins;">
+                    Demo Video
+                </h1>
+                <p class="text-base sm:text-lg lg:text-xl" style="font-family: 'Inter';">
+                    This is the video to show the purpose of the app
+                </p>
+            </div>
+
+            <div class="bg-white border-2 rounded-2xl p-4 sm:p-8 lg:p-12">
+                <div class="relative w-full" style="padding-top: 56.25%;">
+                    <iframe class="absolute top-0 left-0 w-full h-full rounded-xl border-2 border-blue-500"
+                        src="https://player.vimeo.com/video/1150620622?badge=0&autopause=0&player_id=0&app_id=58479"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Demo Video">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="w-full py-12 sm:py-16 lg:py-20 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-8 sm:mb-12">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4"
+                    style="color: #000000B2; font-family: Poppins;">
+                    Help Us Improve This App
+                </h1>
+                <p class="text-sm sm:text-base lg:text-lg max-w-3xl mx-auto" style="font-family: 'Inter';">
+                    This is an early demo version of the app. We are currently collecting feedback from schools and
+                    teachers to understand real needs before full development. Your honest feedback will help us build a
+                    better solution.
+                </p>
+            </div>
+
+            <div class="bg-blue-500 rounded-2xl p-4 sm:p-6 lg:p-8">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
+                    <!-- Questions Column -->
+                    <div class="lg:col-span-2 bg-blue-400/70 rounded-2xl p-4 sm:p-6 space-y-6 sm:space-y-8">
+                        <!-- Question 1 -->
+                        <div>
+                            <h1 class="font-bold text-lg sm:text-xl lg:text-2xl text-white mb-3 sm:mb-4">
+                                1. Overall, how useful does this app feel for school students?
+                            </h1>
+                            <div class="flex gap-2 sm:gap-3">
+                                <button id="star_1" class="transform hover:scale-110 transition-transform">
+                                    <img id="star_1_img" src="icons/star.png" class="w-8 h-8 sm:w-10 sm:h-10"
+                                        alt="Star">
+                                    <img id="star_1_filled" src="icons/star-filled.png"
+                                        class="w-8 h-8 sm:w-10 sm:h-10 hidden" alt="Star filled">
+                                </button>
+                                <button id="star_2" class="transform hover:scale-110 transition-transform">
+                                    <img id="star_2_img" src="icons/star.png" class="w-8 h-8 sm:w-10 sm:h-10"
+                                        alt="Star">
+                                    <img id="star_2_filled" src="icons/star-filled.png"
+                                        class="w-8 h-8 sm:w-10 sm:h-10 hidden" alt="Star filled">
+                                </button>
+                                <button id="star_3" class="transform hover:scale-110 transition-transform">
+                                    <img id="star_3_img" src="icons/star.png" class="w-8 h-8 sm:w-10 sm:h-10"
+                                        alt="Star">
+                                    <img id="star_3_filled" src="icons/star-filled.png"
+                                        class="w-8 h-8 sm:w-10 sm:h-10 hidden" alt="Star filled">
+                                </button>
+                                <button id="star_4" class="transform hover:scale-110 transition-transform">
+                                    <img id="star_4_img" src="icons/star.png" class="w-8 h-8 sm:w-10 sm:h-10"
+                                        alt="Star">
+                                    <img id="star_4_filled" src="icons/star-filled.png"
+                                        class="w-8 h-8 sm:w-10 sm:h-10 hidden" alt="Star filled">
+                                </button>
+                                <button id="star_5" class="transform hover:scale-110 transition-transform">
+                                    <img id="star_5_img" src="icons/star.png" class="w-8 h-8 sm:w-10 sm:h-10"
+                                        alt="Star">
+                                    <img id="star_5_filled" src="icons/star-filled.png"
+                                        class="w-8 h-8 sm:w-10 sm:h-10 hidden" alt="Star filled">
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div>
+                            <h1 class="font-bold text-lg sm:text-xl lg:text-2xl text-white mb-3 sm:mb-4">
+                                2. Would your school consider paying for an app like this?
+                            </h1>
+                            <div class="space-y-3">
+                                <button id="button_1"
+                                    class="flex items-center gap-3 sm:gap-4 hover:opacity-80 transition-opacity">
+                                    <div id="div_1"
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-blue-400 rounded-xl border-2 border-white flex-shrink-0">
+                                    </div>
+                                    <h1 class="text-base sm:text-lg lg:text-xl text-white text-left">Yes Definitely</h1>
+                                </button>
+                                <button id="button_2"
+                                    class="flex items-center gap-3 sm:gap-4 hover:opacity-80 transition-opacity">
+                                    <div id="div_2"
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-blue-400 rounded-xl border-2 border-white flex-shrink-0">
+                                    </div>
+                                    <h1 class="text-base sm:text-lg lg:text-xl text-white text-left">Maybe, if pricing
+                                        is reasonable</h1>
+                                </button>
+                                <button id="button_3"
+                                    class="flex items-center gap-3 sm:gap-4 hover:opacity-80 transition-opacity">
+                                    <div id="div_3"
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-blue-400 rounded-xl border-2 border-white flex-shrink-0">
+                                    </div>
+                                    <h1 class="text-base sm:text-lg lg:text-xl text-white text-left">No</h1>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div>
+                            <h1 class="font-bold text-lg sm:text-xl lg:text-2xl text-white mb-3 sm:mb-4">
+                                3. Would you like to try a free trial of this app for a short time?
+                            </h1>
+                            <div class="space-y-3">
+                                <button id="button_a"
+                                    class="flex items-center gap-3 sm:gap-4 hover:opacity-80 transition-opacity">
+                                    <div id="div_a"
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-blue-400 rounded-xl border-2 border-white flex-shrink-0">
+                                    </div>
+                                    <h1 class="text-base sm:text-lg lg:text-xl text-white text-left">Yes</h1>
+                                </button>
+                                <button id="button_b"
+                                    class="flex items-center gap-3 sm:gap-4 hover:opacity-80 transition-opacity">
+                                    <div id="div_b"
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-blue-400 rounded-xl border-2 border-white flex-shrink-0">
+                                    </div>
+                                    <h1 class="text-base sm:text-lg lg:text-xl text-white text-left">Maybe, Later</h1>
+                                </button>
+                                <button id="button_c"
+                                    class="flex items-center gap-3 sm:gap-4 hover:opacity-80 transition-opacity">
+                                    <div id="div_c"
+                                        class="w-7 h-7 sm:w-8 sm:h-8 bg-blue-400 rounded-xl border-2 border-white flex-shrink-0">
+                                    </div>
+                                    <h1 class="text-base sm:text-lg lg:text-xl text-white text-left">No</h1>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact & Feedback Column -->
+                    <div class="bg-blue-400/70 rounded-2xl p-4 sm:p-6 space-y-6">
+                        <div>
+                            <h1 class="text-white font-bold text-lg sm:text-xl lg:text-2xl mb-3">Your Contact Details
+                                (Optional)</h1>
+                            <textarea id="contact" class="w-full rounded-2xl px-4 py-3 resize-none text-sm sm:text-base"
+                                rows="2" placeholder="Email or Phone number"></textarea>
+                        </div>
+
+                        <div class="flex-1">
+                            <h1 class="text-white font-bold text-lg sm:text-xl lg:text-2xl mb-3">Feedback (Optional)
+                            </h1>
+                            <textarea id="feed" class="w-full rounded-2xl px-4 py-3 resize-none text-sm sm:text-base"
+                                rows="6" placeholder="Your valuable Feedback"></textarea>
+                        </div>
+
+                        <div class="flex justify-center pt-4">
+                            <button id="share"
+                                class="w-full sm:w-auto px-8 py-4 bg-blue-800/60 hover:bg-blue-800 transition-colors rounded-2xl">
+                                <h1 class="text-white text-lg sm:text-xl font-bold">Share Feedback</h1>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-blue-800/90 rounded-t-2xl mt-12 px-4 sm:px-8 py-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
+                <div>
+                    <h1 class="text-base sm:text-lg lg:text-xl font-mono text-white mb-3">Primary</h1>
+                    <div class="space-y-2">
+                        <a href="#home"
+                            class="block text-sm sm:text-base lg:text-lg font-mono text-blue-400 hover:text-blue-300">Home</a>
+                        <a href="Products.html"
+                            class="block text-sm sm:text-base lg:text-lg font-mono text-blue-400 hover:text-blue-300">Products</a>
+                        <a href="pricing.html"
+                            class="block text-sm sm:text-base lg:text-lg font-mono text-blue-400 hover:text-blue-300">Pricing</a>
+                        <a href="ourwork.html"
+                            class="block text-sm sm:text-base lg:text-lg font-mono text-blue-400 hover:text-blue-300">Our
+                            Work</a>
+                        <a href="contact.html"
+                            class="block text-sm sm:text-base lg:text-lg font-mono text-blue-400 hover:text-blue-300">Contact
+                            Us</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h1 class="text-base sm:text-lg lg:text-xl font-mono text-white mb-3">Others</h1>
+                    <div class="space-y-2">
+                        <a href="#"
+                            class="block text-sm sm:text-base lg:text-lg font-mono text-blue-400 hover:text-blue-300">Privacy
+                            Policy</a>
+                        <a href="#"
+                            class="block text-sm sm:text-base lg:text-lg font-mono text-blue-400 hover:text-blue-300">Guidelines</a>
+                        <a href="#"
+                            class="block text-sm sm:text-base lg:text-lg font-mono text-blue-400 hover:text-blue-300">Terms
+                            of Service</a>
+                        <a href="#"
+                            class="block text-sm sm:text-base lg:text-lg font-mono text-blue-400 hover:text-blue-300">Credits</a>
+                    </div>
+                </div>
+
+                <div class="col-span-2 sm:col-span-1">
+                    <h1 class="text-base sm:text-lg lg:text-xl font-mono text-white mb-3">Contact</h1>
+                    <p class="text-sm sm:text-base lg:text-lg font-mono text-white mb-4">
+                        Email:<br>lectureblock@gmail.com
+                    </p>
+                    <h1 class="text-base sm:text-lg lg:text-xl font-mono text-white mb-3">Socials</h1>
+                    <div class="flex gap-3">
+                        <a href="https://www.instagram.com/lectureblock" class="hover:opacity-80 transition-opacity">
+                            <img src="icons/icons8-instagram-250.png" class="w-7 h-7 sm:w-8 sm:h-8" alt="Instagram">
+                        </a>
+                        <a href="https://discord.gg/lectureblock" class="hover:opacity-80 transition-opacity">
+                            <img src="icons/discord.png" class="w-8 h-8 sm:w-9 sm:h-9" alt="Discord">
+                        </a>
+                        <a href="https://twitter.com/lectureblock" class="hover:opacity-80 transition-opacity">
+                            <img src="icons/twitter.png" class="w-7 h-7 sm:w-8 sm:h-8" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // EmailJS initialization
+        if (typeof emailjs === 'undefined') {
+            console.error('EmailJS library not found');
+        } else {
+            emailjs.init("guGBcQQh78cPbeMk_");
+        }
+
+        function showStatus(msg, type) {
+            console.log(type + ': ' + msg);
+            let statusEl = document.getElementById('email-status');
+            if (!statusEl) {
+                statusEl = document.createElement('div');
+                statusEl.id = 'email-status';
+                statusEl.style.cssText = 'position:fixed;right:1rem;bottom:1rem;padding:0.75rem 1.5rem;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:9999;font-weight:600;';
+                document.body.appendChild(statusEl);
+            }
+            statusEl.textContent = msg;
+            statusEl.style.background = (type === 'success') ? '#16a34a' : '#ef4444';
+            statusEl.style.color = 'white';
+            setTimeout(() => statusEl.remove(), 4000);
+        }
+
+        // Question 2 handlers
+        const button_1 = document.getElementById("button_1");
+        const div_1 = document.getElementById("div_1");
+        const button_2 = document.getElementById("button_2");
+        const div_2 = document.getElementById("div_2");
+        const button_3 = document.getElementById("button_3");
+        const div_3 = document.getElementById("div_3");
+
+        // Question 3 handlers
+        const button_a = document.getElementById("button_a");
+        const div_a = document.getElementById("div_a");
+        const button_b = document.getElementById("button_b");
+        const div_b = document.getElementById("div_b");
+        const button_c = document.getElementById("button_c");
+        const div_c = document.getElementById("div_c");
+
+        let options_1 = [div_1, div_2, div_3];
+        let options_2 = [div_a, div_b, div_c];
+
+        button_1?.addEventListener("click", () => choose(1));
+        button_2?.addEventListener("click", () => choose(2));
+        button_3?.addEventListener("click", () => choose(3));
+        button_a?.addEventListener("click", () => choose2(1));
+        button_b?.addEventListener("click", () => choose2(2));
+        button_c?.addEventListener("click", () => choose2(3));
+
+        function choose(input) {
+            const selectedDiv = options_1[input - 1];
+            if (selectedDiv.classList.contains('bg-white')) {
+                selectedDiv.classList.add('bg-blue-400');
+                selectedDiv.classList.remove('bg-white');
+            } else {
+                options_1.forEach(div => {
+                    div.classList.remove('bg-white');
+                    div.classList.add('bg-blue-400');
+                });
+                selectedDiv.classList.remove('bg-blue-400');
+                selectedDiv.classList.add('bg-white');
+            }
+        }
+
+        function choose2(input) {
+            const selectedDiv = options_2[input - 1];
+            if (selectedDiv.classList.contains('bg-white')) {
+                selectedDiv.classList.add('bg-blue-400');
+                selectedDiv.classList.remove('bg-white');
+            } else {
+                options_2.forEach(div => {
+                    div.classList.remove('bg-white');
+                    div.classList.add('bg-blue-400');
+                });
+                selectedDiv.classList.remove('bg-blue-400');
+                selectedDiv.classList.add('bg-white');
+            }
+        }
+
+        // Star rating handlers
+        const star_1 = document.getElementById("star_1");
+        const star_2 = document.getElementById("star_2");
+        const star_3 = document.getElementById("star_3");
+        const star_4 = document.getElementById("star_4");
+        const star_5 = document.getElementById("star_5");
+
+        const star_1_img = document.getElementById("star_1_img");
+        const star_2_img = document.getElementById("star_2_img");
+        const star_3_img = document.getElementById("star_3_img");
+        const star_4_img = document.getElementById("star_4_img");
+        const star_5_img = document.getElementById("star_5_img");
+
+        const star_1_filled = document.getElementById("star_1_filled");
+        const star_2_filled = document.getElementById("star_2_filled");
+        const star_3_filled = document.getElementById("star_3_filled");
+        const star_4_filled = document.getElementById("star_4_filled");
+        const star_5_filled = document.getElementById("star_5_filled");
+
+        let stars = [star_1_img, star_2_img, star_3_img, star_4_img, star_5_img];
+        let filled = [star_1_filled, star_2_filled, star_3_filled, star_4_filled, star_5_filled];
+
+        star_1?.addEventListener("click", () => perform(1));
+        star_2?.addEventListener("click", () => perform(2));
+        star_3?.addEventListener("click", () => perform(3));
+        star_4?.addEventListener("click", () => perform(4));
+        star_5?.addEventListener("click", () => perform(5));
+
+        function perform(input) {
+            if (stars[input - 1].classList.contains('hidden') && (input < 5 && !stars[input].classList.contains('hidden'))) {
+                stars.forEach(star => star.classList.remove('hidden'));
+                filled.forEach(star => star.classList.add('hidden'));
+            } else if (stars[input - 1].classList.contains('hidden') && (input === 5 || stars[input].classList.contains('hidden'))) {
+                stars.forEach(star => star.classList.remove('hidden'));
+                filled.forEach(star => star.classList.add('hidden'));
+                for (let i = 0; i < input; i++) {
+                    stars[i].classList.add('hidden');
+                    filled[i].classList.remove('hidden');
+                }
+            } else {
+                for (let i = 0; i < input; i++) {
+                    stars[i].classList.add('hidden');
+                    filled[i].classList.remove('hidden');
+                }
+            }
+        }
+
+        // Form submission
+        const contact = document.getElementById("contact");
+        const feed = document.getElementById("feed");
+        const share = document.getElementById("share");
+
+        share?.addEventListener("click", Submit);
+
+        function Submit() {
+            let current_rating = 5;
+            let one_answer = "not answered";
+            let two_answer = "not answered";
+
+            for (let i = 0; i < 5; i++) {
+                if (!stars[i].classList.contains("hidden")) {
+                    current_rating = i;
+                    break;
+                }
+            }
+
+            for (let i = 0; i < 3; i++) {
+                if (options_1[i].classList.contains("bg-white")) {
+                    if (i === 0) one_answer = "Yes Definitely";
+                    else if (i === 1) one_answer = "Maybe, if pricing is reasonable";
+                    else one_answer = "No";
+                    break;
+                }
+            }
+
+            for (let i = 0; i < 3; i++) {
+                if (options_2[i].classList.contains("bg-white")) {
+                    if (i === 0) two_answer = "Yes";
+                    else if (i === 1) two_answer = "Maybe, Later";
+                    else two_answer = "No";
+                    break;
+                }
+            }
+
+            const formData = {
+                rating: current_rating,
+                q1: one_answer,
+                q2: two_answer,
+                contact: contact.value,
+                feed: feed.value,
+                timestamp: new Date().toLocaleString()
+            };
+
+            emailjs.send("service_nhv19dr", "template_79hgezi", formData)
+                .then(response => {
+                    console.log('EmailJS response:', response);
+                    showStatus('✅ Feedback sent successfully!', 'success');
+                    contact.value = '';
+                    feed.value = '';
+                    stars.forEach(star => star.classList.remove('hidden'));
+                    filled.forEach(star => star.classList.add('hidden'));
+                    options_1.forEach(div => {
+                        div.classList.remove('bg-white');
+                        div.classList.add('bg-blue-400');
+                    });
+                    options_2.forEach(div => {
+                        div.classList.remove('bg-white');
+                        div.classList.add('bg-blue-400');
+                    });
+                })
+                .catch(error => {
+                    console.error('EmailJS error:', error);
+                    showStatus('❌ Error sending feedback: ' + (error.text || error.message), 'error');
+                });
+        }
+    </script>
+</body>
+
+</html>

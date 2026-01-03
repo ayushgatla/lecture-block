@@ -1,0 +1,171 @@
+@import url('fonts.googleapis.com');
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 420px) and (max-width: 440px) {
+    .new_title {
+        font-size: 10px;
+    }
+}
+
+.hero-title {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: -0.03em;
+    background: linear-gradient(90deg,
+            #7c3aed,
+            #2563eb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1rem, 4vw, 3rem);
+    font-weight: 800;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.money {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+#head {
+    color: #312C2C;
+
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 420px) {
+    #head {
+        font-size: clamp(2rem, 5vw, 4rem)
+    }
+}
+
+.description {
+    color: #545963;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 100;
+
+}
+
+.headings {
+    font-family: cabin
+}
+
+.cab {
+    font-family: Cabin;
+    font-weight: 700;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: right;
+
+}
+
+.cab-left {
+    font-family: Cabin;
+    font-weight: 700;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+
+
+}
+
+
+.para {
+    font-family: Cabin;
+    font-weight: 400;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: right;
+
+}
+
+/* .anima {
+    ;
+    opacity: 1;
+    transition: 800ms ease-in;
+}
+
+.ani.show {
+    translate: 0%;
+    opacity: 1;
+
+} */
+
+.para-left {
+    font-family: Cabin;
+    font-weight: 400;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.scroll {
+    scrollbar-shadow-color: #3a88ed;
+    scrollbar-base-color: #2563eb;
+    scrollbar-color: #055bca rgba(88, 138, 240, 0.6);
+    scrollbar-width: auto;
+}
+
+@media screen and (min-width: 420px) and (max-width: 440px) {
+    .new {
+        width: 580px;
+        height: 295px;
+    }
+}
+
+.nice {
+    display: flex;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1074px) {
+    .nice {
+        visibility: hidden;
+    }
+}
+
+@media screen and(maxwidth : 720px) {
+    #dash {
+        position: fixed;
+        left: 0;
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4 rem;
+        height: 100vh;
+    }
+}
+
+#dash {
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    width: 18rem;
+    z-index: 3;
+    box-shadow: 1rem 3rem 4 rem;
+    height: 100vh;
+}
