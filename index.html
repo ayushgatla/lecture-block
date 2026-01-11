@@ -391,23 +391,23 @@
                         institutes.
                     </h1>
                     <div class="flex mt-8 gap-2">
-                        <a href="https://x.com/syncoes9112">
+                        <a href="https://x.com/syncoes9112" target="_blank">
                             <div><img src="icons/twitt.png" alt=""></div>
                         </a>
-                        <a href="https://www.linkedin.com/company/syncoes/">
+                        <a href="https://www.linkedin.com/company/syncoes/" target="_blank">
 
                             <div><img src="icons/link.png" alt=""></div>
                         </a>
-                        <a href="https://www.facebook.com/share/1CDrksweNf/">
+                        <a href="https://www.facebook.com/share/1CDrksweNf/" target="_blank">
 
                             <div><img src="icons/2.png" alt=""></div>
                         </a>
 
-                        <a href="https://www.instagram.com/syncoes/">
+                        <a href="https://www.instagram.com/syncoes/" target="_blank">
 
                             <div><img src="icons/insta.png" alt=""></div>
                         </a>
-                        <a href="https://www.youtube.com/@syncoes">
+                        <a href="https://www.youtube.com/@syncoes" target="_blank">
 
                             <div><img src="icons/yt.png" alt=""></div>
                         </a>
@@ -452,196 +452,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        if (typeof emailjs === 'undefined') {
-            console.error('EmailJS library not found');
-        } else {
-            emailjs.init("guGBcQQh78cPbeMk_");
-        }
 
-        function showStatus(msg, type) {
-            console.log(type + ': ' + msg);
-            let statusEl = document.getElementById('email-status');
-            if (!statusEl) {
-                statusEl = document.createElement('div');
-                statusEl.id = 'email-status';
-                statusEl.style.cssText = 'position:fixed;right:1rem;bottom:1rem;padding:0.75rem 1.5rem;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:9999;font-weight:600;';
-                document.body.appendChild(statusEl);
-            }
-            statusEl.textContent = msg;
-            statusEl.style.background = (type === 'success') ? '#16a34a' : '#ef4444';
-            statusEl.style.color = 'white';
-            setTimeout(() => statusEl.remove(), 4000);
-        }
-
-        const button_1 = document.getElementById("button_1");
-        const div_1 = document.getElementById("div_1");
-        const button_2 = document.getElementById("button_2");
-        const div_2 = document.getElementById("div_2");
-        const button_3 = document.getElementById("button_3");
-        const div_3 = document.getElementById("div_3");
-
-        const button_a = document.getElementById("button_a");
-        const div_a = document.getElementById("div_a");
-        const button_b = document.getElementById("button_b");
-        const div_b = document.getElementById("div_b");
-        const button_c = document.getElementById("button_c");
-        const div_c = document.getElementById("div_c");
-
-        let options_1 = [div_1, div_2, div_3];
-        let options_2 = [div_a, div_b, div_c];
-
-        button_1?.addEventListener("click", () => choose(1));
-        button_2?.addEventListener("click", () => choose(2));
-        button_3?.addEventListener("click", () => choose(3));
-        button_a?.addEventListener("click", () => choose2(1));
-        button_b?.addEventListener("click", () => choose2(2));
-        button_c?.addEventListener("click", () => choose2(3));
-
-        function choose(input) {
-            const selectedDiv = options_1[input - 1];
-            if (selectedDiv.classList.contains('bg-white')) {
-                selectedDiv.classList.add('bg-blue-400');
-                selectedDiv.classList.remove('bg-white');
-            } else {
-                options_1.forEach(div => {
-                    div.classList.remove('bg-white');
-                    div.classList.add('bg-blue-400');
-                });
-                selectedDiv.classList.remove('bg-blue-400');
-                selectedDiv.classList.add('bg-white');
-            }
-        }
-
-        function choose2(input) {
-            const selectedDiv = options_2[input - 1];
-            if (selectedDiv.classList.contains('bg-white')) {
-                selectedDiv.classList.add('bg-blue-400');
-                selectedDiv.classList.remove('bg-white');
-            } else {
-                options_2.forEach(div => {
-                    div.classList.remove('bg-white');
-                    div.classList.add('bg-blue-400');
-                });
-                selectedDiv.classList.remove('bg-blue-400');
-                selectedDiv.classList.add('bg-white');
-            }
-        }
-
-        const star_1 = document.getElementById("star_1");
-        const star_2 = document.getElementById("star_2");
-        const star_3 = document.getElementById("star_3");
-        const star_4 = document.getElementById("star_4");
-        const star_5 = document.getElementById("star_5");
-
-        const star_1_img = document.getElementById("star_1_img");
-        const star_2_img = document.getElementById("star_2_img");
-        const star_3_img = document.getElementById("star_3_img");
-        const star_4_img = document.getElementById("star_4_img");
-        const star_5_img = document.getElementById("star_5_img");
-
-        const star_1_filled = document.getElementById("star_1_filled");
-        const star_2_filled = document.getElementById("star_2_filled");
-        const star_3_filled = document.getElementById("star_3_filled");
-        const star_4_filled = document.getElementById("star_4_filled");
-        const star_5_filled = document.getElementById("star_5_filled");
-
-        let stars = [star_1_img, star_2_img, star_3_img, star_4_img, star_5_img];
-        let filled = [star_1_filled, star_2_filled, star_3_filled, star_4_filled, star_5_filled];
-
-        star_1?.addEventListener("click", () => perform(1));
-        star_2?.addEventListener("click", () => perform(2));
-        star_3?.addEventListener("click", () => perform(3));
-        star_4?.addEventListener("click", () => perform(4));
-        star_5?.addEventListener("click", () => perform(5));
-
-        function perform(input) {
-            if (stars[input - 1].classList.contains('hidden') && (input < 5 && !stars[input].classList.contains('hidden'))) {
-                stars.forEach(star => star.classList.remove('hidden'));
-                filled.forEach(star => star.classList.add('hidden'));
-            } else if (stars[input - 1].classList.contains('hidden') && (input === 5 || stars[input].classList.contains('hidden'))) {
-                stars.forEach(star => star.classList.remove('hidden'));
-                filled.forEach(star => star.classList.add('hidden'));
-                for (let i = 0; i < input; i++) {
-                    stars[i].classList.add('hidden');
-                    filled[i].classList.remove('hidden');
-                }
-            } else {
-                for (let i = 0; i < input; i++) {
-                    stars[i].classList.add('hidden');
-                    filled[i].classList.remove('hidden');
-                }
-            }
-        }
-
-        const contact = document.getElementById("contact");
-        const feed = document.getElementById("feed");
-        const share = document.getElementById("share");
-
-        share?.addEventListener("click", Submit);
-
-        function Submit() {
-            let current_rating = 5;
-            let one_answer = "not answered";
-            let two_answer = "not answered";
-
-            for (let i = 0; i < 5; i++) {
-                if (!stars[i].classList.contains("hidden")) {
-                    current_rating = i;
-                    break;
-                }
-            }
-
-            for (let i = 0; i < 3; i++) {
-                if (options_1[i].classList.contains("bg-white")) {
-                    if (i === 0) one_answer = "Yes Definitely";
-                    else if (i === 1) one_answer = "Maybe, if pricing is reasonable";
-                    else one_answer = "No";
-                    break;
-                }
-            }
-
-            for (let i = 0; i < 3; i++) {
-                if (options_2[i].classList.contains("bg-white")) {
-                    if (i === 0) two_answer = "Yes";
-                    else if (i === 1) two_answer = "Maybe, Later";
-                    else two_answer = "No";
-                    break;
-                }
-            }
-
-            const formData = {
-                rating: current_rating,
-                q1: one_answer,
-                q2: two_answer,
-                contact: contact.value,
-                feed: feed.value,
-                timestamp: new Date().toLocaleString()
-            };
-
-            emailjs.send("service_nhv19dr", "template_79hgezi", formData)
-                .then(response => {
-                    console.log('EmailJS response:', response);
-                    showStatus('✅ Feedback sent successfully!', 'success');
-                    contact.value = '';
-                    feed.value = '';
-                    stars.forEach(star => star.classList.remove('hidden'));
-                    filled.forEach(star => star.classList.add('hidden'));
-                    options_1.forEach(div => {
-                        div.classList.remove('bg-white');
-                        div.classList.add('bg-blue-400');
-                    });
-                    options_2.forEach(div => {
-                        div.classList.remove('bg-white');
-                        div.classList.add('bg-blue-400');
-                    });
-                })
-                .catch(error => {
-                    console.error('EmailJS error:', error);
-                    showStatus('❌ Error sending feedback: ' + (error.text || error.message), 'error');
-                });
-        }
-    </script>
     <script>
         (function () {
             const openBtn = document.getElementById('mobile-nav-btn');
