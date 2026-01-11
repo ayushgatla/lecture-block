@@ -1,0 +1,257 @@
+{
+    "meta": {
+        "os": "Fedora Linux",
+        "desktop_environment": "GNOME",
+        "scope": "Default system + typing shortcuts",
+        "note": "Some shortcuts depend on application support"
+    },
+    "system": {
+        "overview": [
+            "Super"
+        ],
+        "activities": [
+            "Super"
+        ],
+        "application_menu": [
+            "Alt+F1"
+        ],
+        "show_applications": [
+            "Super+A"
+        ],
+        "lock_screen": [
+            "Super+L"
+        ],
+        "log_out": [
+            "Ctrl+Alt+Delete"
+        ],
+        "power_off_menu": [
+            "Ctrl+Alt+Delete"
+        ],
+        "screenshot_full": [
+            "Print"
+        ],
+        "screenshot_window": [
+            "Alt+Print"
+        ],
+        "screenshot_selection": [
+            "Shift+Print"
+        ],
+        "screenshot_copy_clipboard": [
+            "Ctrl+Shift+Print"
+        ]
+    },
+    "window_management": {
+        "close_window": [
+            "Alt+F4"
+        ],
+        "switch_windows": [
+            "Alt+Tab"
+        ],
+        "switch_windows_reverse": [
+            "Shift+Alt+Tab"
+        ],
+        "switch_applications": [
+            "Super+Tab"
+        ],
+        "move_window": [
+            "Alt+F7"
+        ],
+        "resize_window": [
+            "Alt+F8"
+        ],
+        "maximize_window": [
+            "Super+Up"
+        ],
+        "restore_window": [
+            "Super+Down"
+        ],
+        "minimize_window": [
+            "Super+H"
+        ],
+        "tile_left": [
+            "Super+Left"
+        ],
+        "tile_right": [
+            "Super+Right"
+        ],
+        "toggle_fullscreen": [
+            "F11"
+        ]
+    },
+    "workspaces": {
+        "switch_workspace_up": [
+            "Super+PageUp"
+        ],
+        "switch_workspace_down": [
+            "Super+PageDown"
+        ],
+        "move_window_to_workspace_up": [
+            "Shift+Super+PageUp"
+        ],
+        "move_window_to_workspace_down": [
+            "Shift+Super+PageDown"
+        ]
+    },
+    "applications": {
+        "launch_terminal": [
+            "Ctrl+Alt+T"
+        ],
+        "launch_settings": [
+            "Super+I"
+        ],
+        "launch_file_manager": [
+            "Super+E"
+        ],
+        "launch_browser": [
+            "Super+B"
+        ]
+    },
+    "clipboard_and_editing": {
+        "copy": [
+            "Ctrl+C"
+        ],
+        "cut": [
+            "Ctrl+X"
+        ],
+        "paste": [
+            "Ctrl+V"
+        ],
+        "paste_without_formatting": [
+            "Ctrl+Shift+V"
+        ],
+        "select_all": [
+            "Ctrl+A"
+        ],
+        "undo": [
+            "Ctrl+Z"
+        ],
+        "redo": [
+            "Ctrl+Shift+Z",
+            "Ctrl+Y"
+        ]
+    },
+    "text_navigation": {
+        "move_cursor_left": [
+            "Left"
+        ],
+        "move_cursor_right": [
+            "Right"
+        ],
+        "move_cursor_up": [
+            "Up"
+        ],
+        "move_cursor_down": [
+            "Down"
+        ],
+        "move_word_left": [
+            "Ctrl+Left"
+        ],
+        "move_word_right": [
+            "Ctrl+Right"
+        ],
+        "move_line_start": [
+            "Home"
+        ],
+        "move_line_end": [
+            "End"
+        ],
+        "move_document_start": [
+            "Ctrl+Home"
+        ],
+        "move_document_end": [
+            "Ctrl+End"
+        ]
+    },
+    "text_selection": {
+        "select_character": [
+            "Shift+Arrow"
+        ],
+        "select_word_left": [
+            "Ctrl+Shift+Left"
+        ],
+        "select_word_right": [
+            "Ctrl+Shift+Right"
+        ],
+        "select_line_start": [
+            "Shift+Home"
+        ],
+        "select_line_end": [
+            "Shift+End"
+        ],
+        "select_document": [
+            "Ctrl+Shift+Home",
+            "Ctrl+Shift+End"
+        ]
+    },
+    "line_and_block_editing": {
+        "delete_previous_word": [
+            "Ctrl+Backspace"
+        ],
+        "delete_next_word": [
+            "Ctrl+Delete"
+        ],
+        "delete_line": [
+            "Ctrl+Shift+K"
+        ],
+        "duplicate_line_up": [
+            "Ctrl+Shift+Up"
+        ],
+        "duplicate_line_down": [
+            "Ctrl+Shift+Down"
+        ],
+        "move_line_up": [
+            "Alt+Up"
+        ],
+        "move_line_down": [
+            "Alt+Down"
+        ]
+    },
+    "search_and_navigation": {
+        "find": [
+            "Ctrl+F"
+        ],
+        "find_next": [
+            "F3"
+        ],
+        "find_previous": [
+            "Shift+F3"
+        ],
+        "replace": [
+            "Ctrl+H"
+        ],
+        "go_to_line": [
+            "Ctrl+G"
+        ]
+    },
+    "terminal_specific": {
+        "new_tab": [
+            "Ctrl+Shift+T"
+        ],
+        "close_tab": [
+            "Ctrl+Shift+W"
+        ],
+        "clear_screen": [
+            "Ctrl+L"
+        ],
+        "interrupt_process": [
+            "Ctrl+C"
+        ],
+        "suspend_process": [
+            "Ctrl+Z"
+        ],
+        "paste_terminal": [
+            "Ctrl+Shift+V"
+        ],
+        "copy_terminal": [
+            "Ctrl+Shift+C"
+        ]
+    },
+    "typing": {
+        "cpylineup": [
+            "Ctrl+Shift+Alt+Up"
+        ],
+        "cpylinedown": [
+            "Ctrl+Shift+Alt+Down"
+        ]
+    }
+}
