@@ -18,6 +18,21 @@
             scroll-behavior: smooth;
         }
 
+        @keyframes spin {
+            from {
+                translate: 0;
+            }
+
+            to {
+                translate: -100%;
+
+            }
+        }
+
+        .spining {
+            animation: spin 20s infinite linear;
+        }
+
         .hero-title {
             font-family: 'Inter', sans-serif;
             font-weight: 800;
@@ -341,9 +356,8 @@
 
                             <h1 class="cab text-right text-xl mr-4  ">Download the App</h1>
                             <p class=" mr-2 max-sm:mr-2 max-sm:p-2 max-sm:text-sm" style="text-align: right;">
-                                Students download the app from
-                                the Play Store using a single
-                                common app name.
+                                Students download the app from the Play Store using a single common app name.
+
                             </p>
                         </div>
                     </div>
@@ -360,12 +374,13 @@
                     <div class="flex flex-col w-full justify-end">
                         <div class="h-[100px] w-full">
 
-                            <h1 class="cab text-right text-xl mr-4  ">App Becomes School App</h1>
+                            <h1 class="cab text-right text-xl mr-4  ">App Personalizes
+                                Automatically</h1>
                             <p class=" mr-2 max-sm:mr-4  max-sm:text-sm" style="text-align: right;">
                                 After entering the code, the app:
-                                Loads the school's name & logo.
-                                ,Changes the app colors/theme
-                                ,Shows only that school’s data.
+                                Loads the institute’s name & logo
+                                Changes the app colors/theme
+                                Shows only that institute data
                             </p>
                         </div>
                     </div>
@@ -398,11 +413,11 @@
                     <div class="flex flex-col  ">
                         <div>
 
-                            <h1 class="cab-left text-xl ml-6 ">Enter School Code
+                            <h1 class="cab-left text-xl ml-6 ">Secure Payments
 
                             </h1>
                             <p class="ml-6  para-left">
-                                On first launch, the app asks for a School / Class Code provided by the school.
+                                On first launch, the app asks for Coaching Institute Code provided by the institute.
                             </p>
                         </div>
                     </div>
@@ -420,12 +435,12 @@
                     <div class="flex flex-col ">
                         <div>
 
-                            <h1 class="cab-left text-xl ml-6">Students Use Daily</h1>
+                            <h1 class="cab-left text-xl ml-6">Driver Ratings</h1>
                             <p class="ml-14  ml-6 para-left">
                                 Students see:
-                                ,Classes & timetable
-                                ,Homework & announcements
-                                ,Results, attendance, etc. </p>
+                                Courses & timetable
+                                DPP & MockTests.
+                                Video player, Notes, etc.</p>
                         </div>
                     </div>
                 </div>
@@ -499,60 +514,122 @@
 
             <div class="lg:hidden bg-blue-500 p-4 rounded-2xl">
                 <div class="flex gap-4 overflow-x-auto scroll pb-4">
-                    <div
-                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
-                        <img src="figma/page3/phone1.png" alt="" class="w-full">
-                        <div class="bg-white p-3 text-center">
-                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Student Login</h1>
+                    <div class="spining flex gap-2">
+
+
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/phone1.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Student Login</h1>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/phone2.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Student Profile</h1>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/result.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Result</h1>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/Quizz.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Fun Quizz</h1>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/attendance.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Attendance</h1>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/fees.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Fees Payment</h1>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/table.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Time Table</h1>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/sheet.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Data Sheet</h1>
+                            </div>
                         </div>
                     </div>
-                    <div
-                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
-                        <img src="figma/page3/phone2.png" alt="" class="w-full">
-                        <div class="bg-white p-3 text-center">
-                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Student Profile</h1>
+                    <div aria-hidden class="spining flex gap-2">
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/phone1.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Student Login</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
-                        <img src="figma/page3/result.png" alt="" class="w-full">
-                        <div class="bg-white p-3 text-center">
-                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Result</h1>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/phone2.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Student Profile</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
-                        <img src="figma/page3/Quizz.png" alt="" class="w-full">
-                        <div class="bg-white p-3 text-center">
-                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Fun Quizz</h1>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/result.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Result</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
-                        <img src="figma/page3/attendance.png" alt="" class="w-full">
-                        <div class="bg-white p-3 text-center">
-                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Attendance</h1>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/Quizz.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Fun Quizz</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
-                        <img src="figma/page3/fees.png" alt="" class="w-full">
-                        <div class="bg-white p-3 text-center">
-                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Fees Payment</h1>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/attendance.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Attendance</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
-                        <img src="figma/page3/table.png" alt="" class="w-full">
-                        <div class="bg-white p-3 text-center">
-                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Time Table</h1>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/fees.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Fees Payment</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden">
-                        <img src="figma/page3/sheet.png" alt="" class="w-full">
-                        <div class="bg-white p-3 text-center">
-                            <h1 class="font-bold text-lg" style="font-family: Poppins;">Data Sheet</h1>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/table.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Time Table</h1>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-64 bg-[url('/figma/page3/back1.png')] bg-cover rounded-t-xl overflow-hidden bg-blue-400">
+                            <img src="figma/page3/sheet.png" alt="" class="w-full">
+                            <div class="bg-white p-3 text-center">
+                                <h1 class="font-bold text-lg" style="font-family: Poppins;">Data Sheet</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
