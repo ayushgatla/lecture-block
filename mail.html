@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Syncoes - Email Template</title>
+    <style>
+        /* Reset styles */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            font-family: 'Inter', 'Poppins', Arial, sans-serif;
+        }
+
+        /* Prevent auto-linking */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+
+            .fluid {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            .stack-column {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            .mobile-padding {
+                padding: 20px !important;
+            }
+
+            .mobile-font-size {
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #f1f5f9; margin: 0; padding: 0;">
+    <!-- Email Wrapper -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+        style="background-color: #f1f5f9; padding: 40px 0;">
+        <tr>
+            <td align="center" style="padding: 0;">
+                <!-- Email Container -->
+                <table border="0" cellpadding="0" cellspacing="0" width="600" class="email-container"
+                    style="background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+                    <!-- Header Section with Logo and Brand -->
+                    <tr>
+                        <td align="center"
+                            style="background: linear-gradient(135deg, #2B59FF 0%, #1e40af 100%); padding: 40px 20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="center" style="padding-bottom: 20px;">
+                                        <!-- Logo Placeholder - Replace with actual logo URL -->
+                                        <div
+                                            style="width: 120px; height: 40px; background-color: rgba(255,255,255,0.2); border-radius: 8px; display: inline-block; line-height: 40px; text-align: center; color: white; font-size: 20px; font-weight: bold;">
+                                            SYNCOES
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"
+                                        style="color: #ffffff; font-size: 28px; font-weight: 700; font-family: 'Poppins', Arial, sans-serif; line-height: 1.3;">
+                                        {{subject}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Main Content Section -->
+                    <tr>
+                        <td style="padding: 40px 30px;" class="mobile-padding">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td
+                                        style="color: #1f2937; font-size: 18px; font-family: 'Inter', Arial, sans-serif; padding-bottom: 20px;">
+                                        Hello Team,
+                                    </td>
+                                </tr>
+
+                                <!-- Message Body -->
+                                <tr>
+                                    <td
+                                        style="color: #4b5563; font-size: 16px; font-family: 'Inter', Arial, sans-serif; line-height: 1.6; padding-bottom: 25px;">
+                                        {{message}}
+                                    </td>
+                                </tr>
+
+                                <!-- Details Section (if needed) -->
+                                <tr>
+                                    <td style="padding: 25px 0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                            style="background-color: #f9fafb; border-radius: 12px; padding: 20px;">
+                                            <tr>
+                                                <td
+                                                    style="color: #1f2937; font-size: 16px; font-weight: 600; font-family: 'Poppins', Arial, sans-serif; padding-bottom: 15px;">
+                                                    Details:
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 8px 0;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td
+                                                                style="color: #6b7280; font-size: 14px; font-family: 'Inter', Arial, sans-serif; padding: 6px 0; width: 140px;">
+                                                                <strong>Name:</strong>
+                                                            </td>
+                                                            <td
+                                                                style="color: #1f2937; font-size: 14px; font-family: 'Inter', Arial, sans-serif; padding: 6px 0;">
+                                                                {{name}}
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="color: #6b7280; font-size: 14px; font-family: 'Inter', Arial, sans-serif; padding: 6px 0;">
+                                                                <strong>Email:</strong>
+                                                            </td>
+                                                            <td
+                                                                style="color: #1f2937; font-size: 14px; font-family: 'Inter', Arial, sans-serif; padding: 6px 0;">
+                                                                {{email}}
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="color: #6b7280; font-size: 14px; font-family: 'Inter', Arial, sans-serif; padding: 6px 0;">
+                                                                <strong>Phone:</strong>
+                                                            </td>
+                                                            <td
+                                                                style="color: #1f2937; font-size: 14px; font-family: 'Inter', Arial, sans-serif; padding: 6px 0;">
+                                                                {{phone}}
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="color: #6b7280; font-size: 14px; font-family: 'Inter', Arial, sans-serif; padding: 6px 0;">
+                                                                <strong>Date:</strong>
+                                                            </td>
+                                                            <td
+                                                                style="color: #1f2937; font-size: 14px; font-family: 'Inter', Arial, sans-serif; padding: 6px 0;">
+                                                                {{timestamp}}
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- Call to Action Button (Optional) -->
+                                <tr>
+                                    <td align="center" style="padding: 30px 0 20px 0;">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" style="border-radius: 25px; background-color: #2B59FF;">
+                                                    <a href="{{action_url}}" target="_blank"
+                                                        style="font-size: 16px; font-family: 'Poppins', Arial, sans-serif; color: #ffffff; text-decoration: none; padding: 15px 40px; border-radius: 25px; display: inline-block; font-weight: 600;">
+                                                        {{action_button_text}}
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- Closing -->
+                                <tr>
+                                    <td
+                                        style="color: #4b5563; font-size: 16px; font-family: 'Inter', Arial, sans-serif; line-height: 1.6; padding-top: 20px;">
+                                        Best regards,<br>
+                                        <strong style="color: #2B59FF;">The Syncoes Team</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Footer Section -->
+                    <tr>
+                        <td style="background-color: #1e293b; padding: 30px 20px;" class="mobile-padding">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <!-- Social Links -->
+                                <tr>
+                                    <td align="center" style="padding-bottom: 20px;">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td style="padding: 0 10px;">
+                                                    <a href="https://x.com/syncoes9112" target="_blank"
+                                                        style="text-decoration: none;">
+                                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"
+                                                            alt="Twitter" width="24" height="24"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding: 0 10px;">
+                                                    <a href="https://www.linkedin.com/company/syncoes/"
+                                                        target="_blank" style="text-decoration: none;">
+                                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
+                                                            alt="LinkedIn" width="24" height="24"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding: 0 10px;">
+                                                    <a href="https://www.facebook.com/share/1CDrksweNf/"
+                                                        target="_blank" style="text-decoration: none;">
+                                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png"
+                                                            alt="Facebook" width="24" height="24"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding: 0 10px;">
+                                                    <a href="https://www.instagram.com/syncoes/" target="_blank"
+                                                        style="text-decoration: none;">
+                                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+                                                            alt="Instagram" width="24" height="24"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                                <td style="padding: 0 10px;">
+                                                    <a href="https://www.youtube.com/@syncoes" target="_blank"
+                                                        style="text-decoration: none;">
+                                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
+                                                            alt="YouTube" width="24" height="24"
+                                                            style="display: block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- Contact Info -->
+                                <tr>
+                                    <td align="center"
+                                        style="color: #94a3b8; font-size: 14px; font-family: 'Inter', Arial, sans-serif; padding-bottom: 15px;">
+                                        <a href="mailto:syncoes93@gmail.com"
+                                            style="color: #94a3b8; text-decoration: none;">syncoes93@gmail.com</a><br>
+                                        <a href="https://syncoes.in" target="_blank"
+                                            style="color: #94a3b8; text-decoration: none;">www.syncoes.in</a>
+                                    </td>
+                                </tr>
+
+                                <!-- Tagline -->
+                                <tr>
+                                    <td align="center"
+                                        style="color: #cbd5e1; font-size: 13px; font-family: 'Inter', Arial, sans-serif; padding-bottom: 15px; font-style: italic;">
+                                        A ready-to-use education app platform for schools and coaching institutes.
+                                    </td>
+                                </tr>
+
+                                <!-- Copyright & Links -->
+                                <tr>
+                                    <td align="center"
+                                        style="color: #64748b; font-size: 12px; font-family: 'Inter', Arial, sans-serif; line-height: 1.5;">
+                                        © 2025 Syncoes. All rights reserved.<br>
+                                        <a href="#" style="color: #64748b; text-decoration: underline;">Privacy
+                                            Policy</a> |
+                                        <a href="#" style="color: #64748b; text-decoration: underline;">Terms &
+                                            Conditions</a> |
+                                        <a href="#" style="color: #64748b; text-decoration: underline;">Unsubscribe</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
