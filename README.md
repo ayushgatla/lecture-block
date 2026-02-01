@@ -3,7 +3,7 @@
 
 
 <img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/blob/main/icons/logos.png"
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/icons/logos.png"
   alt="How Syncoes Works Step 1"
   style="border-radius:1rem;width:280px;max-width:100%;"
 />
