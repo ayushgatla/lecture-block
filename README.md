@@ -65,7 +65,7 @@ Footer and Social Section
 ## 🖼 Website Image References (From Repository)
 
 
-<div style="display:flex;gap:16px;flex-wrap:wrap;">
+<div style="display:flex;gap:16px;flex-wrap:wrap; display:flex-column">
 
 
 <img
