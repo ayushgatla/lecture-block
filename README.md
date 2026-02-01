@@ -1,3 +1,18 @@
+
+<div style="display:flex;gap:16px;flex-wrap:wrap; display:flex-column">
+
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/blob/main/icons/logos.png"
+  alt="How Syncoes Works Step 1"
+  style="border-radius:1rem;width:280px;max-width:100%;"
+/>
+
+
+
+
+
+</div>
 # 🌐 Syncoes — Official Website Source
 
 This repository contains the frontend source code for the official
