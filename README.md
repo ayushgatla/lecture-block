@@ -1,135 +1,223 @@
-# 📚 Lecture Block
+# 🌐 Syncoes — Official Website Source
 
-Lecture Block is a focused web-based tool designed to help structure, organize, and manage lecture or learning content in a clean and distraction-free way.
+This repository contains the frontend source code for the official
+Syncoes website.
 
-This project is built as part of the **Syncoes ecosystem**, and follows its design philosophy, structure, and development principles.
+Syncoes is an education-focused platform that provides ready-made
+applications for schools and coaching institutes.
+This website acts as the primary informational and presentation layer
+for the Syncoes ecosystem.
 
----
+This repository does NOT represent a standalone product.
+It exists only to explain, present, and promote Syncoes.
 
-## 🌐 Part of Syncoes
+------------------------------------------------------------
 
-This repository is **not a standalone product**.
+## 🧠 What Syncoes Is
 
-Lecture Block is developed **exclusively as a module under Syncoes**, ensuring:
-- Consistent architecture
-- Shared design language
-- Interoperability with other Syncoes components
+Syncoes is designed to simplify education management by offering
+dedicated applications for:
 
-> 🔗 Syncoes: https://syncoes.com  
-*(Referenced for context only)*
+- Schools
+- Coaching institutes
+- Educational organizations
 
----
+The website explains:
+- What Syncoes offers
+- Why institutions should use it
+- How onboarding works
+- Where users can connect with Syncoes
 
-## ✨ What Lecture Block Does
+------------------------------------------------------------
 
-Lecture Block focuses on **content clarity and structure**, allowing users to:
-- Organize lecture material into logical blocks
-- Maintain a clean reading experience
-- Reduce cognitive overload during study or revision
-- Serve as a building block for larger educational platforms
+## 🧩 Website Sections Explained (Based on HTML)
 
-Think of it as a **content primitive**, not a bloated app.
+### 1. Hero / Landing Section
 
----
+Purpose:
+- Introduce Syncoes
+- Communicate the main value proposition
 
-## 🧠 Key Features
+Content:
+- Headline: "Your own Education App made easy"
+- Short description highlighting affordability and simplicity
+- Call-to-action buttons encouraging users to get started
 
-- 🧱 Block-based lecture layout  
-- 📖 Clean, minimal reading experience  
-- 🎯 Focused on content, not distractions  
-- 🧩 Designed to integrate with Syncoes modules  
-- ⚡ Lightweight and fast  
+This is the first impression section.
 
-No unnecessary animations.  
-No “productivity gimmicks”.  
-Just content, done right.
+------------------------------------------------------------
 
----
+### 2. Product Showcase Section
 
-## 🛠 Tech Stack
+Purpose:
+- Show what Syncoes provides
 
-- **HTML5** – Semantic and structured markup  
-- **CSS3** – Layout, spacing, and readability  
-- **JavaScript** – Interaction and logic (where needed)
+Products presented:
+- Syncoes Coaching App
+- Syncoes School App
 
-Frameworks are avoided unless they add **real value**.
+Each product block includes:
+- Visual representation
+- Brief description
+- Action button
 
----
+This section clarifies that Syncoes is a platform, not a single tool.
 
-## 🖼 Visual Preview
+------------------------------------------------------------
 
-<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+### 3. Why Syncoes Section
 
-<img 
-  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
-  alt="Lecture content layout"
-  style="border-radius: 1rem; max-width: 100%; width: 420px;"
+Purpose:
+- Build trust and credibility
+
+Highlights:
+- Saves time for institutions
+- Easy to use
+- Centralized system
+- Affordable pricing
+
+This section targets decision-makers such as administrators and owners.
+
+------------------------------------------------------------
+
+### 4. How Syncoes Works Section
+
+Purpose:
+- Explain onboarding visually and simply
+
+Steps shown:
+1. Get your institute code
+2. Enter the code in the app
+3. Access all features from one place
+
+This reduces confusion and friction for new users.
+
+------------------------------------------------------------
+
+### 5. Footer & Social Section
+
+Purpose:
+- Establish brand presence
+- Provide external links
+
+Includes links to official Syncoes platforms:
+- Twitter (X)
+- LinkedIn
+- Instagram
+- Facebook
+- YouTube
+
+------------------------------------------------------------
+
+## 🖼 Website Visual References (Repo Assets)
+
+The images below are sourced directly from this repository
+and displayed using GitHub raw URLs.
+
+<div style="display:flex;gap:16px;flex-wrap:wrap;">
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/hero.png"
+  alt="Syncoes Hero Section"
+  style="border-radius:1rem;width:420px;max-width:100%;"
 />
 
-<img 
-  src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
-  alt="Studying interface concept"
-  style="border-radius: 1rem; max-width: 100%; width: 420px;"
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/product1.png"
+  alt="Syncoes Coaching App"
+  style="border-radius:1rem;width:420px;max-width:100%;"
+/>
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/product2.png"
+  alt="Syncoes School App"
+  style="border-radius:1rem;width:420px;max-width:100%;"
+/>
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/how1.png"
+  alt="How Syncoes Works Step 1"
+  style="border-radius:1rem;width:280px;max-width:100%;"
+/>
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/how2.png"
+  alt="How Syncoes Works Step 2"
+  style="border-radius:1rem;width:280px;max-width:100%;"
+/>
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/how3.png"
+  alt="How Syncoes Works Step 3"
+  style="border-radius:1rem;width:280px;max-width:100%;"
 />
 
 </div>
 
-> Images are for **visual reference only**, representing layout and content clarity concepts.
+------------------------------------------------------------
 
----
+## 🛠 Technologies Used
 
-## 📁 Project Philosophy
+HTML5
+- Semantic page structure
+- Content organization
 
-Lecture Block follows these principles:
+CSS3
+- Layout
+- Spacing
+- Responsive styling
 
-- **Simplicity over features**
-- **Structure over styling**
-- **Readability over aesthetics**
-- **Integration over isolation**
+JavaScript
+- Client-side interactions (if present)
 
-If something doesn’t improve learning, it doesn’t belong here.
+No frontend framework is used.
+This is a static, performance-focused website.
 
----
+------------------------------------------------------------
 
-## 🔗 Integration with Syncoes
+## 📁 Project Directory Structure
 
-Lecture Block is designed to:
-- Be embedded inside Syncoes pages
-- Share global styles and configs
-- Follow Syncoes routing and state patterns
-- Act as a reusable learning component
+lecture-block/
+├── assets/
+│   ├── hero.png
+│   ├── product1.png
+│   ├── product2.png
+│   ├── how1.png
+│   ├── how2.png
+│   └── how3.png
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── main.js
+│
+├── index.html
+│
+└── README.md
 
-It is **not intended** to be deployed independently.
+------------------------------------------------------------
 
----
+## 🎯 Purpose of This Repository
 
-## 🚧 Planned Enhancements
+- Present Syncoes clearly
+- Explain the platform visually
+- Serve as the public-facing website
+- Maintain a simple and readable structure
 
-- Editable lecture blocks
-- Syntax-highlighted code blocks
-- Versioned lecture content
-- Export support (Markdown / PDF)
-- Accessibility improvements
+This repository is intentionally minimal
+and focused on communication, not application logic.
 
-All future updates will align with Syncoes standards.
-
----
+------------------------------------------------------------
 
 ## 📄 License
 
-This project follows the same licensing terms as **Syncoes**.
+This project follows Syncoes internal licensing terms.
+Use outside the Syncoes ecosystem is not recommended.
 
-Usage outside the Syncoes ecosystem is **not recommended**.
+------------------------------------------------------------
 
----
-
-## ⭐ Final Note
-
-Lecture Block is intentionally minimal.
-
-If you’re looking for:
-- Animations → wrong place  
-- Dashboards → wrong place  
-- Productivity buzzwords → definitely wrong place  
-
-If you’re looking for **clarity and structure**, welcome home.
+If you are looking for:
+- Dashboards → wrong repository
+- Backend logic → wrong repository
+- Clear presentation of Syncoes → correct repository
