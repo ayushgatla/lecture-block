@@ -1,182 +1,101 @@
-# 🌐 Syncoes — Official Website Source
+🌐 Syncoes — Official Website Source
 
-This repository contains the frontend source code for the official
-Syncoes website.
+This repository contains the frontend source code for the official Syncoes website.
 
-Syncoes is an education-focused platform that provides ready-made
-applications for schools and coaching institutes.
-This website serves as the primary informational and presentation
-layer for the Syncoes ecosystem.
+Syncoes is an education-focused platform that provides ready-made applications for schools and coaching institutes.
+The website serves as the primary public-facing layer of the Syncoes ecosystem, communicating the platform’s purpose, offerings, and onboarding flow.
 
-This repository is NOT a standalone product.
-It exists only to present and explain Syncoes.
+🧠 About Syncoes
 
-------------------------------------------------------------
+Syncoes enables educational institutions to deploy and manage their own applications with minimal setup.
 
-## 🧠 What Syncoes Is
+The website communicates:
 
-Syncoes helps educational institutions launch and manage their own
-dedicated apps with minimal effort.
+The value proposition of Syncoes
 
-The website explains:
-- What Syncoes offers
-- The types of apps available
-- Why institutions should choose Syncoes
-- How onboarding works
+The applications offered under the platform
+
+Reasons institutions choose Syncoes
+
+A simple onboarding workflow
 
 The focus is clarity, simplicity, and trust.
 
-------------------------------------------------------------
+🧩 Website Sections
+Hero Section
 
-## 🧩 Website Sections Explained (Based on HTML)
+Introduces Syncoes and communicates the primary message:
+“Your own Education App made easy”
 
-### 1. Hero / Landing Section
+This section establishes the platform’s purpose and value at first glance.
 
-Purpose:
-- Introduce Syncoes
-- Communicate the core value proposition
+Product Showcase
 
-Content:
-- Headline: "Your own Education App made easy"
-- Short supporting description
-- Primary call-to-action buttons
+Highlights the applications provided under Syncoes:
 
-This section is designed to immediately communicate value.
+Coaching App
 
-------------------------------------------------------------
+School App
 
-### 2. Product Showcase Section
+Each product is visually represented and positioned as part of a unified platform.
 
-Purpose:
-- Display the apps offered by Syncoes
+Why Syncoes
 
-Products shown:
-- Syncoes Coaching App
-- Syncoes School App
+Explains the advantages of the platform, focusing on:
 
-Each product block contains:
-- Visual representation
-- Brief descriptive text
-- Action-oriented button
+Time efficiency
 
-This section clarifies that Syncoes is a platform with multiple solutions.
+Ease of use
 
-------------------------------------------------------------
+Centralized management
 
-### 3. Why Syncoes Section
+Cost effectiveness
 
-Purpose:
-- Build credibility and confidence
+This section is designed to build confidence for institutional decision-makers.
 
-Highlights include:
-- Time-saving workflows
-- Easy-to-use interface
-- Centralized management
-- Cost-effective solution
+How Syncoes Works
 
-This section targets decision-makers and administrators.
+Visually explains onboarding in a step-based format:
 
-------------------------------------------------------------
+Institute code generation
 
-### 4. How Syncoes Works Section
+Code entry in the application
 
-Purpose:
-- Explain the onboarding process visually
+Unified access to features
 
-Steps illustrated:
-1. Get your institute code
-2. Enter the code in the app
-3. Access all features in one place
+The goal is to reduce friction and confusion.
 
-This section reduces friction for new users.
+Footer & Social Presence
 
-------------------------------------------------------------
+Reinforces brand legitimacy and connects to Syncoes’ official social platforms.
 
-### 5. Footer & Social Links
-
-Purpose:
-- Reinforce brand presence
-- Provide external touchpoints
-
-Includes official Syncoes links to:
-- Twitter (X)
-- LinkedIn
-- Instagram
-- Facebook
-- YouTube
-
-------------------------------------------------------------
-
-## 🖼 Website Visual References (Repo Images)
-
-The images below are loaded directly from the repository
-using the website/images directory.
-
+🖼 Visual Overview (Website Images)
 <div style="display:flex;gap:16px;flex-wrap:wrap;">
 
-<img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/hero.png"
-  alt="Syncoes Hero Section"
-  style="border-radius:1rem;width:420px;max-width:100%;"
-/>
+<img src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/hero.png" alt="Syncoes Hero Section" style="border-radius:1rem;width:420px;max-width:100%;" />
 
-<img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/coaching.png"
-  alt="Syncoes Coaching App"
-  style="border-radius:1rem;width:420px;max-width:100%;"
-/>
+<img src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/coaching.png" alt="Syncoes Coaching App" style="border-radius:1rem;width:420px;max-width:100%;" />
 
-<img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/school.png"
-  alt="Syncoes School App"
-  style="border-radius:1rem;width:420px;max-width:100%;"
-/>
+<img src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/school.png" alt="Syncoes School App" style="border-radius:1rem;width:420px;max-width:100%;" />
 
-<img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/step1.png"
-  alt="How Syncoes Works Step 1"
-  style="border-radius:1rem;width:280px;max-width:100%;"
-/>
+<img src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/step1.png" alt="Syncoes Step One" style="border-radius:1rem;width:280px;max-width:100%;" />
 
-<img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/step2.png"
-  alt="How Syncoes Works Step 2"
-  style="border-radius:1rem;width:280px;max-width:100%;"
-/>
+<img src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/step2.png" alt="Syncoes Step Two" style="border-radius:1rem;width:280px;max-width:100%;" />
 
-<img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/step3.png"
-  alt="How Syncoes Works Step 3"
-  style="border-radius:1rem;width:280px;max-width:100%;"
-/>
+<img src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/step3.png" alt="Syncoes Step Three" style="border-radius:1rem;width:280px;max-width:100%;" />
 
 </div>
+🛠 Technologies
 
-(If any filenames differ, replace them with the exact names from website/images.)
+HTML5 — semantic structure
 
-------------------------------------------------------------
+CSS3 — layout and responsive styling
 
-## 🛠 Technologies Used
+JavaScript — client-side interactions
 
-HTML5
-- Semantic structure
-- Content layout
-
-CSS3
-- Styling
-- Spacing
-- Responsiveness
-
-JavaScript
-- Client-side interactions (if present)
-
-No frontend frameworks are used.
-This is a static, performance-oriented website.
-
-------------------------------------------------------------
-
-## 📁 Project Directory Structure
-
+This is a static website focused on performance and presentation.
+📁 Project Structure
+```bash
 lecture-block/
 ├── website/
 │   ├── images/
@@ -196,28 +115,5 @@ lecture-block/
 │   └── index.html
 │
 └── README.md
+```
 
-------------------------------------------------------------
-
-## 🎯 Purpose of This Repository
-
-- Serve as the official Syncoes website
-- Communicate product offerings clearly
-- Provide a simple onboarding explanation
-- Maintain a clean, readable frontend structure
-
-This repository is intentionally minimal and presentation-focused.
-
-------------------------------------------------------------
-
-## 📄 License
-
-This project follows Syncoes internal licensing terms.
-Usage outside the Syncoes ecosystem is not recommended.
-
-------------------------------------------------------------
-
-If you are looking for:
-- Backend logic → wrong repository
-- Dashboards → wrong repository
-- Clear explanation of Syncoes → correct repository
