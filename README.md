@@ -68,7 +68,11 @@ Footer and Social Section
 <div style="display:flex;gap:16px;flex-wrap:wrap;">
 
 
-
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/main.png"
+  alt="How Syncoes Works Step 1"
+  style="border-radius:1rem;width:280px;max-width:100%;"
+/>
 <img
   src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/coaching.png"
   alt="Syncoes Coaching App"
@@ -81,11 +85,7 @@ Footer and Social Section
   style="border-radius:1rem;width:420px;max-width:100%;"
 />
 
-<img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/feedback"
-  alt="How Syncoes Works Step 1"
-  style="border-radius:1rem;width:280px;max-width:100%;"
-/>
+
 
 
 
@@ -142,6 +142,34 @@ lecture-block/
 - Maintain a clean frontend structure
 
 ------------------------------------------------------------
+
+## 💬 Feedback
+
+Feedback is used to improve the Syncoes platform and its website
+experience over time.
+
+Collected feedback focuses on:
+- Clarity of information presented
+- Ease of understanding the platform offerings
+- Website structure and navigation
+- Visual presentation and readability
+- Overall user experience
+
+Insights gathered from feedback help guide:
+- Content improvements
+- Design refinements
+- Feature prioritization across Syncoes products
+
+Feedback is reviewed periodically and incorporated where it aligns
+with the platform’s long-term vision.
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/feedback.png"
+  alt="How Syncoes Works Step 1"
+  style="border-radius:1rem;width:280px;max-width:100%;"
+/>
+------------------------------------------------------------
+
 
 ## 📄 License
 
