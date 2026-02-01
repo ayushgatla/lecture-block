@@ -74,9 +74,42 @@ School App Image:
 website/images/school.png
 
 How It Works Step Images:
-website/images/step1.png
-website/images/step2.png
-website/images/step3.png
+
+<div style="display:flex;gap:16px;flex-wrap:wrap;">
+
+
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/coaching.png"
+  alt="Syncoes Coaching App"
+  style="border-radius:1rem;width:420px;max-width:100%;"
+/>
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/school.png"
+  alt="Syncoes School App"
+  style="border-radius:1rem;width:420px;max-width:100%;"
+/>
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/step1.png"
+  alt="How Syncoes Works Step 1"
+  style="border-radius:1rem;width:280px;max-width:100%;"
+/>
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/step2.png"
+  alt="How Syncoes Works Step 2"
+  style="border-radius:1rem;width:280px;max-width:100%;"
+/>
+
+<img
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/step3.png"
+  alt="How Syncoes Works Step 3"
+  style="border-radius:1rem;width:280px;max-width:100%;"
+/>
+
+</div>
 
 ------------------------------------------------------------
 
