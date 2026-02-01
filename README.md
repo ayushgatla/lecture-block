@@ -64,16 +64,6 @@ Footer and Social Section
 
 ## 🖼 Website Image References (From Repository)
 
-Hero Image:
-website/images/hero.png
-
-Coaching App Image:
-website/images/coaching.png
-
-School App Image:
-website/images/school.png
-
-How It Works Step Images:
 
 <div style="display:flex;gap:16px;flex-wrap:wrap;">
 
@@ -92,22 +82,12 @@ How It Works Step Images:
 />
 
 <img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/step1.png"
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/feedback"
   alt="How Syncoes Works Step 1"
   style="border-radius:1rem;width:280px;max-width:100%;"
 />
 
-<img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/step2.png"
-  alt="How Syncoes Works Step 2"
-  style="border-radius:1rem;width:280px;max-width:100%;"
-/>
 
-<img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/step3.png"
-  alt="How Syncoes Works Step 3"
-  style="border-radius:1rem;width:280px;max-width:100%;"
-/>
 
 </div>
 
