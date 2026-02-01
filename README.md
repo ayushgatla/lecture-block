@@ -69,7 +69,7 @@ Footer and Social Section
 
 
 <img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/main.png"
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website images/Main.png"
   alt="How Syncoes Works Step 1"
   style="border-radius:1rem;width:280px;max-width:100%;"
 />
