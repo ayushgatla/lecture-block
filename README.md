@@ -5,28 +5,26 @@ Syncoes website.
 
 Syncoes is an education-focused platform that provides ready-made
 applications for schools and coaching institutes.
-This website acts as the primary informational and presentation layer
-for the Syncoes ecosystem.
+This website serves as the primary informational and presentation
+layer for the Syncoes ecosystem.
 
-This repository does NOT represent a standalone product.
-It exists only to explain, present, and promote Syncoes.
+This repository is NOT a standalone product.
+It exists only to present and explain Syncoes.
 
 ------------------------------------------------------------
 
 ## 🧠 What Syncoes Is
 
-Syncoes is designed to simplify education management by offering
-dedicated applications for:
-
-- Schools
-- Coaching institutes
-- Educational organizations
+Syncoes helps educational institutions launch and manage their own
+dedicated apps with minimal effort.
 
 The website explains:
 - What Syncoes offers
-- Why institutions should use it
+- The types of apps available
+- Why institutions should choose Syncoes
 - How onboarding works
-- Where users can connect with Syncoes
+
+The focus is clarity, simplicity, and trust.
 
 ------------------------------------------------------------
 
@@ -36,71 +34,71 @@ The website explains:
 
 Purpose:
 - Introduce Syncoes
-- Communicate the main value proposition
+- Communicate the core value proposition
 
 Content:
 - Headline: "Your own Education App made easy"
-- Short description highlighting affordability and simplicity
-- Call-to-action buttons encouraging users to get started
+- Short supporting description
+- Primary call-to-action buttons
 
-This is the first impression section.
+This section is designed to immediately communicate value.
 
 ------------------------------------------------------------
 
 ### 2. Product Showcase Section
 
 Purpose:
-- Show what Syncoes provides
+- Display the apps offered by Syncoes
 
-Products presented:
+Products shown:
 - Syncoes Coaching App
 - Syncoes School App
 
-Each product block includes:
+Each product block contains:
 - Visual representation
-- Brief description
-- Action button
+- Brief descriptive text
+- Action-oriented button
 
-This section clarifies that Syncoes is a platform, not a single tool.
+This section clarifies that Syncoes is a platform with multiple solutions.
 
 ------------------------------------------------------------
 
 ### 3. Why Syncoes Section
 
 Purpose:
-- Build trust and credibility
+- Build credibility and confidence
 
-Highlights:
-- Saves time for institutions
-- Easy to use
-- Centralized system
-- Affordable pricing
+Highlights include:
+- Time-saving workflows
+- Easy-to-use interface
+- Centralized management
+- Cost-effective solution
 
-This section targets decision-makers such as administrators and owners.
+This section targets decision-makers and administrators.
 
 ------------------------------------------------------------
 
 ### 4. How Syncoes Works Section
 
 Purpose:
-- Explain onboarding visually and simply
+- Explain the onboarding process visually
 
-Steps shown:
+Steps illustrated:
 1. Get your institute code
 2. Enter the code in the app
-3. Access all features from one place
+3. Access all features in one place
 
-This reduces confusion and friction for new users.
+This section reduces friction for new users.
 
 ------------------------------------------------------------
 
-### 5. Footer & Social Section
+### 5. Footer & Social Links
 
 Purpose:
-- Establish brand presence
-- Provide external links
+- Reinforce brand presence
+- Provide external touchpoints
 
-Includes links to official Syncoes platforms:
+Includes official Syncoes links to:
 - Twitter (X)
 - LinkedIn
 - Instagram
@@ -109,90 +107,93 @@ Includes links to official Syncoes platforms:
 
 ------------------------------------------------------------
 
-## 🖼 Website Visual References (Repo Assets)
+## 🖼 Website Visual References (Repo Images)
 
-The images below are sourced directly from this repository
-and displayed using GitHub raw URLs.
+The images below are loaded directly from the repository
+using the website/images directory.
 
 <div style="display:flex;gap:16px;flex-wrap:wrap;">
 
 <img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/hero.png"
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/hero.png"
   alt="Syncoes Hero Section"
   style="border-radius:1rem;width:420px;max-width:100%;"
 />
 
 <img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/product1.png"
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/coaching.png"
   alt="Syncoes Coaching App"
   style="border-radius:1rem;width:420px;max-width:100%;"
 />
 
 <img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/product2.png"
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/school.png"
   alt="Syncoes School App"
   style="border-radius:1rem;width:420px;max-width:100%;"
 />
 
 <img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/how1.png"
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/step1.png"
   alt="How Syncoes Works Step 1"
   style="border-radius:1rem;width:280px;max-width:100%;"
 />
 
 <img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/how2.png"
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/step2.png"
   alt="How Syncoes Works Step 2"
   style="border-radius:1rem;width:280px;max-width:100%;"
 />
 
 <img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/assets/how3.png"
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/website/images/step3.png"
   alt="How Syncoes Works Step 3"
   style="border-radius:1rem;width:280px;max-width:100%;"
 />
 
 </div>
 
+(If any filenames differ, replace them with the exact names from website/images.)
+
 ------------------------------------------------------------
 
 ## 🛠 Technologies Used
 
 HTML5
-- Semantic page structure
-- Content organization
+- Semantic structure
+- Content layout
 
 CSS3
-- Layout
+- Styling
 - Spacing
-- Responsive styling
+- Responsiveness
 
 JavaScript
 - Client-side interactions (if present)
 
-No frontend framework is used.
-This is a static, performance-focused website.
+No frontend frameworks are used.
+This is a static, performance-oriented website.
 
 ------------------------------------------------------------
 
 ## 📁 Project Directory Structure
 
 lecture-block/
-├── assets/
-│   ├── hero.png
-│   ├── product1.png
-│   ├── product2.png
-│   ├── how1.png
-│   ├── how2.png
-│   └── how3.png
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── main.js
-│
-├── index.html
+├── website/
+│   ├── images/
+│   │   ├── hero.png
+│   │   ├── coaching.png
+│   │   ├── school.png
+│   │   ├── step1.png
+│   │   ├── step2.png
+│   │   └── step3.png
+│   │
+│   ├── css/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   └── main.js
+│   │
+│   └── index.html
 │
 └── README.md
 
@@ -200,24 +201,23 @@ lecture-block/
 
 ## 🎯 Purpose of This Repository
 
-- Present Syncoes clearly
-- Explain the platform visually
-- Serve as the public-facing website
-- Maintain a simple and readable structure
+- Serve as the official Syncoes website
+- Communicate product offerings clearly
+- Provide a simple onboarding explanation
+- Maintain a clean, readable frontend structure
 
-This repository is intentionally minimal
-and focused on communication, not application logic.
+This repository is intentionally minimal and presentation-focused.
 
 ------------------------------------------------------------
 
 ## 📄 License
 
 This project follows Syncoes internal licensing terms.
-Use outside the Syncoes ecosystem is not recommended.
+Usage outside the Syncoes ecosystem is not recommended.
 
 ------------------------------------------------------------
 
 If you are looking for:
-- Dashboards → wrong repository
 - Backend logic → wrong repository
-- Clear presentation of Syncoes → correct repository
+- Dashboards → wrong repository
+- Clear explanation of Syncoes → correct repository
