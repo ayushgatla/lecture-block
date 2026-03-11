@@ -2,10 +2,9 @@
 
 
 <img
-  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/icons/logos.png/Showcase/demo2.png"
+  src="https://raw.githubusercontent.com/ayushgatla/lecture-block/main/icons/logos.png"
   style="border-radius:1rem;width:280px;max-width:100%;"
 />
-
 
 
 
