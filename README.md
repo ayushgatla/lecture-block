@@ -10,7 +10,7 @@
 
 
 # 🌐 Syncoes — Official Website Source
-- [Syncoes](syncoes.in)
+- [Syncoes](https://syncoes.in/)
  <br>
 
 This repository contains the frontend source code for the official
